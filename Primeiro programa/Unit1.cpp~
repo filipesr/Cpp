@@ -1,0 +1,11 @@
+#include <iostream.h>
+#include <iomanip.h>
+
+main()
+{
+        int n;
+        cout << "\n\n\xDB\xDC\xDF\xDD\xDE";
+        cin >> n;
+}
+
+

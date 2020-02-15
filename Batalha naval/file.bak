@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream.h>
+#include <conio.h>
+
+void main()
+{
+	FILE *fp;
+   char str[50][3];
+
+   if ((fp=fopen("base.txt", "r")) == NULL)
+   {
+   	cout << "O Arquivo nao pode ser aberto.\n";
+      getch();
+      exit(1);
+   }
+
+   int i = 0;
+   while(!feof(fp))
+   {
+   	//if(fgets(str[i], 4, fp)) cout << str[i];
+      cout << fp;
+      i++;
+   }
+   fclose(fp);
+   getch();
+}

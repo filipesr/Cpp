@@ -1,0 +1,29 @@
+# Project: Projeto1
+# Makefile created by Dev-C++ 4.9.8.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS =  -L"C:/ARQUIVOS DE PROGRAMAS/DEV-CPP/lib" 
+INCS =  -I"C:/ARQUIVOS DE PROGRAMAS/DEV-CPP/include" 
+CXXINCS =  -I"C:/ARQUIVOS DE PROGRAMAS/DEV-CPP/include/c++"  -I"C:/ARQUIVOS DE PROGRAMAS/DEV-CPP/include/c++/mingw32"  -I"C:/ARQUIVOS DE PROGRAMAS/DEV-CPP/include/c++/backward"  -I"C:/ARQUIVOS DE PROGRAMAS/DEV-CPP/include" 
+BIN  = Projeto1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS = $(INCS) 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Projeto1.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) $(LINKOBJ) -o "Projeto1.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)

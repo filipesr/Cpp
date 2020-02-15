@@ -1,0 +1,349 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>Principal</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>Principal</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>520</width>
+            <height>482</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Principal</string>
+    </property>
+    <property name="icon">
+        <pixmap>Leão.png</pixmap>
+    </property>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>Button1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>300</width>
+                <height>90</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Fechar</string>
+        </property>
+        <property name="on">
+            <bool>false</bool>
+        </property>
+        <property name="flat">
+            <bool>false</bool>
+        </property>
+    </widget>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>MenuBar</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>520</width>
+            <height>25</height>
+        </rect>
+    </property>
+    <item text="&amp;Arquivo" name="fileMenu">
+        <action name="fileNewAction"/>
+        <action name="fileOpenAction"/>
+        <action name="fileSaveAction"/>
+        <action name="fileSaveAsAction"/>
+        <separator/>
+        <action name="filePrintAction"/>
+        <separator/>
+        <action name="fileExitAction"/>
+    </item>
+    <item text="&amp;Editar" name="editMenu">
+        <action name="editUndoAction"/>
+        <action name="editRedoAction"/>
+        <separator/>
+        <action name="editCutAction"/>
+        <action name="editCopyAction"/>
+        <action name="editPasteAction"/>
+        <separator/>
+        <action name="editFindAction"/>
+    </item>
+    <item text="Ajuda" name="helpMenu">
+        <action name="helpContentsAction"/>
+        <separator/>
+        <action name="helpAboutAction"/>
+    </item>
+</menubar>
+<toolbars>
+    <toolbar dock="2">
+        <property name="name">
+            <cstring>toolBar</cstring>
+        </property>
+        <property name="label">
+            <string>Tools</string>
+        </property>
+        <action name="fileNewAction"/>
+        <action name="fileSaveAction"/>
+        <action name="filePrintAction"/>
+        <separator/>
+        <action name="editCopyAction"/>
+        <action name="editCutAction"/>
+        <action name="editPasteAction"/>
+    </toolbar>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>fileNewAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>filenew</iconset>
+        </property>
+        <property name="text">
+            <string>Novo</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Novo</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+N</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileOpenAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>fileopen</iconset>
+        </property>
+        <property name="text">
+            <string>Abrir...</string>
+        </property>
+        <property name="menuText">
+            <string>Abrir...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+O</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>filesave</iconset>
+        </property>
+        <property name="text">
+            <string>Salvar</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Salvar</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+S</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAsAction</cstring>
+        </property>
+        <property name="text">
+            <string>Savar como...</string>
+        </property>
+        <property name="menuText">
+            <string>Salvar como...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>filePrintAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>print</iconset>
+        </property>
+        <property name="text">
+            <string>Imprimir...</string>
+        </property>
+        <property name="menuText">
+            <string>Im&amp;primir...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+P</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileExitAction</cstring>
+        </property>
+        <property name="text">
+            <string>Sair</string>
+        </property>
+        <property name="menuText">
+            <string>Sair</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editUndoAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>undo</iconset>
+        </property>
+        <property name="text">
+            <string>Desfazer</string>
+        </property>
+        <property name="menuText">
+            <string>Desfazer</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+Z</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editRedoAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>redo</iconset>
+        </property>
+        <property name="text">
+            <string>Refazer</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Refazer</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+Y</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editCutAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>editcut</iconset>
+        </property>
+        <property name="text">
+            <string>Recortar</string>
+        </property>
+        <property name="menuText">
+            <string>Re&amp;cortar</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+X</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editCopyAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>editcopy</iconset>
+        </property>
+        <property name="text">
+            <string>Copiar</string>
+        </property>
+        <property name="menuText">
+            <string>C&amp;opiar</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+C</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editPasteAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>editpaste</iconset>
+        </property>
+        <property name="text">
+            <string>Colar</string>
+        </property>
+        <property name="menuText">
+            <string>Colar</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+V</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editFindAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>searchfind</iconset>
+        </property>
+        <property name="text">
+            <string>Localizar...</string>
+        </property>
+        <property name="menuText">
+            <string>Localizar...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+F</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpContentsAction</cstring>
+        </property>
+        <property name="text">
+            <string>Ajuda...</string>
+        </property>
+        <property name="menuText">
+            <string>Ajuda...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAboutAction</cstring>
+        </property>
+        <property name="text">
+            <string>Sobre</string>
+        </property>
+        <property name="menuText">
+            <string>Sobre</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+</actions>
+<connections>
+    <connection>
+        <sender>fileExitAction</sender>
+        <signal>activated()</signal>
+        <receiver>Principal</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>Button1</sender>
+        <signal>clicked()</signal>
+        <receiver>Principal</receiver>
+        <slot>Button1_clicked()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">formPrincipal.ui.h</include>
+</includes>
+<slots>
+    <slot>Button1_clicked()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

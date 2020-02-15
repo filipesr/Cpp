@@ -1,0 +1,228 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Form2</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Form2</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>330</width>
+            <height>250</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>330</width>
+            <height>250</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>330</width>
+            <height>250</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Sync.Mail</string>
+    </property>
+    <property name="icon">
+        <pixmap>searchfind</pixmap>
+    </property>
+    <property name="modal">
+        <bool>false</bool>
+    </property>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>pushButton6</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>150</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Restaurar Backup...</string>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>Restaura o backup selecionado.</string>
+        </property>
+        <property name="whatsThis" stdset="0">
+            <string>Restaura o backup selecionado.</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>pushButton2</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>170</x>
+                <y>10</y>
+                <width>150</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Pegar 'Entrada'</string>
+        </property>
+        <property name="flat">
+            <bool>true</bool>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>Copia a 'Caixa de entrada' do pendrive para o computador.</string>
+        </property>
+        <property name="whatsThis" stdset="0">
+            <string>Copia a 'Caixa de entrada' do pendrive para o computador.</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>pushButton3</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>170</x>
+                <y>50</y>
+                <width>150</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Mandar 'Entrada'</string>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>Copia a 'Caixa de entrada' do computador para o pendrive.</string>
+        </property>
+        <property name="whatsThis" stdset="0">
+            <string>Copia a 'Caixa de entrada' do computador para o pendrive.</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>pushButton4</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>170</x>
+                <y>90</y>
+                <width>150</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Pegar 'Saída'</string>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>Copia a 'Caixa de saída' do pendrive para o computador.</string>
+        </property>
+        <property name="whatsThis" stdset="0">
+            <string>Copia a 'Caixa de saída' do pendrive para o computador.</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>pushButton5</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>170</x>
+                <y>130</y>
+                <width>150</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Mandar 'Saída'</string>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>Copia a 'Caixa de saída' do computador para o pendrive.</string>
+        </property>
+        <property name="whatsThis" stdset="0">
+            <string>Copia a 'Caixa de saída' do computador para o pendrive.</string>
+        </property>
+    </widget>
+    <widget class="QListView">
+        <column>
+            <property name="text">
+                <string>Column 1</string>
+            </property>
+            <property name="clickable">
+                <bool>true</bool>
+            </property>
+            <property name="resizable">
+                <bool>true</bool>
+            </property>
+        </column>
+    <item>
+        <property name="text">
+            <string>New Item</string>
+        </property>
+        <property name="pixmap">
+            <pixmap></pixmap>
+        </property>
+    </item>
+        <property name="name">
+            <cstring>listView1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>90</y>
+                <width>150</width>
+                <height>150</height>
+            </rect>
+        </property>
+        <property name="sizePolicy">
+            <sizepolicy>
+                <hsizetype>7</hsizetype>
+                <vsizetype>0</vsizetype>
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+            </sizepolicy>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>pushButton1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>150</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Fazer Backup...</string>
+        </property>
+        <property name="flat">
+            <bool>true</bool>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>Compacta os dados da caixa de entrada e saída num único arquivo compactado.</string>
+        </property>
+        <property name="whatsThis" stdset="0">
+            <string>Compacta os dados da caixa de entrada e saída num único arquivo compactado.</string>
+        </property>
+    </widget>
+</widget>
+<includes>
+    <include location="local" impldecl="in implementation">form1.ui.h</include>
+</includes>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
